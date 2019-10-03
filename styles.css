@@ -1,0 +1,260 @@
+@charset "UTF-8";
+body{
+    background:#edf0f1;
+    padding-top:80px;
+}
+body,input,button{
+    font-family:'Roboto',sans-serif;
+}
+header{
+    width:100%;
+    height:80px;
+    position:fixed;
+    padding:15px;
+    top:0;
+    left:0;
+    z-index: 5;
+    background: #25b99a;
+    border-radius:0px 0px 10px 10px;
+    box-shadow:0px 2px 4px rgba(44,62,80,.15);
+}
+header input{
+    width:100%;
+    height: 50px;
+    float:none;
+    padding-right: 60px;
+    color:#fff;
+    background: rgba(255,255,255,.2);
+    border:0px;
+    box-shadow:none;
+    outline:none;
+    appearance: none;
+    border-radius:5px 25px 25px 5px;
+    position:relative;
+    margin-right:50px;
+    font-size:15px;
+    font-weight:400;
+    text-indent:18px;
+
+}
+/* Placeholders styles */
+header input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255,255,255,.75);
+  }
+header input::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(255,255,255,.75);
+  }
+header input:-ms-input-placeholder { /* IE 10+ */
+    color: rgba(255,255,255,.75);
+  }
+header input:-moz-placeholder { /* Firefox 18- */
+    color: rgba(255,255,255,.75);
+  }
+
+  header button{
+      width: 50px;
+      height: 50px;
+      position:absolute;
+      top:15px;
+      right:15px;
+      border-radius: 25px;
+      border:0px;
+      cursor: pointer;
+      outline: none;
+      box-shadow:none;
+      appearance: none;
+  }
+header input svg .fill{
+    color:#25b99a;
+}
+.container{
+    width:100%;
+    float:left;
+    padding:15px;
+   
+}
+ul.todo{
+    width:100%;
+    float:left;
+}
+
+ul.todo li{
+    width:100%;
+    min-height:50px;
+    float:left;
+    font-size:14px;
+    font-weight:500;
+    line-height:22px;
+    color:#444;
+    position:relative;
+    background:#fff;
+    border-radius:5px;
+    margin:0 0 10px 0;
+    padding:14px 100px 14px 14px;
+    box-shadow: 0px 1px 2px rgba(44,62,80,.10);
+}
+ul.done li:last-of-type{
+    margin:0px;
+}
+ul.todo li .buttons{
+    width:100px;
+    height:50px;
+    position:absolute;
+    top:0px;
+    right:0px;
+
+}
+
+ul.todo li .buttons button{
+    width:50px;
+    height:50px;
+    float:left;
+    appearance: none;
+    background: none;
+    border:0px;
+    box-shadow:none;
+    outline:none;
+    position:relative;
+    cursor:pointer;
+}
+ul.todo li .buttons button:last-of-type:before{
+    content:'';
+    width:1px;
+    height:30px;
+    position:absolute;
+    top:10px;
+    left:0px;
+    background: #25b99a;
+}
+ul.done{
+    width:100%;
+    float:left;
+}
+
+ul.done li{
+    width:100%;
+    min-height:50px;
+    float:left;
+    font-size:14px;
+    font-weight:500;
+    line-height:22px;
+    color:#444;
+    position:relative;
+    background:#fff;
+    border-radius:5px;
+    margin:0 0 10px 0;
+    padding:14px 100px 14px 14px;
+    box-shadow: 0px 1px 2px rgba(44,62,80,.10);
+}
+ul.done li:last-of-type{
+    margin:0px;
+}
+ul.done li .buttons{
+    width:100px;
+    height:50px;
+    position:absolute;
+    top:0px;
+    right:0px;
+
+}
+
+ul.done li .buttons button{
+    width:50px;
+    height:50px;
+    float:left;
+    appearance: none;
+    background: none;
+    border:0px;
+    box-shadow:none;
+    outline:none;
+    position:relative;
+    cursor:pointer;
+}
+ul.done li .buttons button:last-of-type:before{
+    content:'';
+    width:1px;
+    height:30px;
+    position:absolute;
+    top:10px;
+    left:0px;
+    background: #25b99a;
+}
+
+.remove svg{
+    width: 22px;
+    height:22px;
+    float:none;
+
+}
+
+.complete svg{
+    width:22px;
+    height:22px;
+    float:none;
+    border:1.5px solid #25b99a; 
+    border-radius:11px;
+}
+.remove  svg .fill{
+    fill:#c0cecb;
+}
+.remove:hover  svg .fill{
+    fill:#e85656;
+}
+.buttons button svg .fill{
+    transition: fill 0.2s ease;
+} 
+.complete  svg .fill{
+    fill:#c0cecb;
+}
+.complete:hover  svg .fill{
+    fill:#25b99a;
+}
+ul#completed li .buttons button.complete  svg .fill{
+    fill:#25b99a;
+}
+ul#completed li .buttons button.complete:hover  svg .fill{
+    fill:rgba(37,185,154,0.6);
+}
+ul.todo#completed:before{
+    content:'';
+    width:150px;
+    height:1px;
+    background:#d8e5e0;
+    position:absolute;
+    top:30px;
+    left:50%;
+    margin:0 0 0 -75px;
+}
+ul.todo#completed{
+    position:relative;
+    padding:60px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
